@@ -1,0 +1,157 @@
+<html>
+   <head>
+       <link rel="stylesheet" type="text/css" href="primer-css.css" media="screen"/>
+   </head>
+   <body>
+       <div class="form-style-5">
+
+      <form>
+         <table>
+            <tr>
+               <td colspan="2">
+                  <p> Nombre del vendedor *</p>
+                  <p> <input type="text" name="vendedor" required /></p>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="2">
+                  <h4>Paso #1. Favor seleccione su tipo de plan</h4>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <p> Tipo de PLAN:*</p>
+                  <p>
+                     <select name="tipo-plan" required>
+                        <option>Individual</option>
+                        <option>Familiar</option>
+                     </select>
+                  </p>
+               </td>
+               <td>
+                  <p> Tipo de PAGO:*</p>
+                  <p>
+                     <select name="tipo-pago">
+                        <option>Anual</option>
+                        <option>Semestral</option>
+                        <option>Mensual</option>
+                     </select>
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="2">
+                  <h4>Paso #2. Favor incluir los datos de la persona TITULAR del plan (dueño del plan)</h4>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="2">
+                  <p> Nombre completo:*</p>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <p><input type="text" name="nombre-completo" required/></p>
+                  <p>Primer nombre</p>
+               </td>
+               <td>
+                  <p><input type="text" name="apellido"/></p>
+                  <p>Apellido</p>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <p># Céd./Dimex:*</p>
+                  <p><input type="number" name="cedula" required/></p>
+               </td>
+               <td>
+                  <p>Fecha de nacimiento:*</p>
+                  <p>
+                     <select name="mes" required>
+                        <option>Mes</option>
+                     </select>
+                     <select name="dia" required>
+                        <option>Dia</option>
+                     </select>
+                     <select name="ano" required>
+                        <option>Año</option>
+                     </select>
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <p>Sexo *</p>
+                  <table>
+                     <tr>
+                        <td><input type="radio" name="sex" checked>M</td>
+                        <td><input type="radio" name="sex" >F</td>
+                     </tr>
+                  </table>
+               </td>
+               <td>
+                  <p>Provincia:*</p>
+                  <p><input type="text" name="provincia" required/></p>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <p>Cantón:*</p>
+                  <p><input type="text" name="canton" required/></p>
+               </td>
+               <td>
+                  <p>Distrito:*</p>
+                  <p><input type="text" name="distrito" required/></p>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="2">
+                  <p> Dirección:*</p>
+                  <p> <textarea rows="4" cols="60" name="direccion" required></textarea></p>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <p>Teléfono 1*</p>
+                  <p><input type="number"  name="tel1" required/></p>
+               </td>
+               <td>
+                  <p>Teléfono 2*</p>
+                  <p><input type="number" name="tel2" required/></p>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <p>Email*</p>
+                  <p><input type="email" name="email" required/></p>
+               </td>
+               <td>
+                  <p>Email facturación*</p>
+                  <p><input type="email" name="email-facturacion" required/></p>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="2">
+                  <h4>Paso #3. Indique la forma por medio de la cual hará el pago mensual del plan.</h4>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="2">
+                  <p><input type="radio" name="medio-pago" id="1" required >Cargo automático tarjeta crédito/débito</p>
+                  <p><input type="radio" name="medio-pago" id="2">Cobro mensual tarjeta crédito/débito</p>
+                  <p><input type="radio" name="medio-pago" id="3">Transferencia bancaria</p>
+                  <p><input type="radio" name="medio-pago" id="4">Descuento por planilla (trabajadores del Estado)</p>
+                  <p><input type="radio" name="medio-pago" id="5">Pago anual (2 cuotas de descuento)</p>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="2">
+                  <input type="submit" value="Enviar boleta de inscripción"/>
+               </td>
+            </tr>
+         </table>
+      </form>
+           </div>
+
+   </body>
+</html>
