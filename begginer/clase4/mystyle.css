@@ -1,0 +1,30 @@
+body {
+	background-color:beige;
+}
+
+h1 {
+	text-align:right;
+    text-transform:capitalize;
+    text-shadow: blue 5px 1px 15px
+    
+}
+
+h2 {
+	text-align:center;
+    background-color: : rgba(130,160,70,0.4)    ;
+}
+
+h3 {
+    text-transform:uppercase
+}
+
+p { word-spacing:20px;
+    text-indent:50px;
+    line-height: 50px;
+}
+
+a {
+    text-decoration:none;
+    letter-spacing: 10px
+}
+
