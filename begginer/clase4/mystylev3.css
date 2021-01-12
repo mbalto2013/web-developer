@@ -1,0 +1,24 @@
+p { 
+    color: violet !important;
+    font-weight: lighter;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.parrafo-rojo {
+    color: red;
+}
+
+.mayuscula {
+    text-transform: uppercase;
+}
+
+#titulo-azul {
+    color: blue;
+}
+
+
+h1 {
+    font-family: 'Aclonica', sans-serif;
+    font-weight: 200px;
+    
+}
