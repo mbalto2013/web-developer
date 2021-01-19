@@ -1,27 +1,22 @@
-h1 {
+.h1-centrado {
 	text-transform: capitalize;
 	color: red;
 }
 
-p {
+.p-centrado {
 	text-align: center;
 }
 
-h2 {
+.h2-derecha-subrayado {
 	text-align: right;
 	text-decoration: underline;
 }
 
-p {
-	text-align: center
-}
-
 .parrafo-azul {
 	color: blue;
-	word-spacing: 10px;
+	word-spacing: 20px;
 }
 
-.p50 {
+.parrafo-50 {
 	text-indent: 50px;
-	text-align: inherit;
 }
