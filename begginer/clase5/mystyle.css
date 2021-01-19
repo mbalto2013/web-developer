@@ -1,0 +1,27 @@
+h1 {
+	text-transform: capitalize;
+	color: red;
+}
+
+p {
+	text-align: center;
+}
+
+h2 {
+	text-align: right;
+	text-decoration: underline;
+}
+
+p {
+	text-align: center
+}
+
+.parrafo-azul {
+	color: blue;
+	word-spacing: 10px;
+}
+
+.p50 {
+	text-indent: 50px;
+	text-align: inherit;
+}
