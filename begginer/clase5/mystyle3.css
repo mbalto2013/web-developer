@@ -1,0 +1,52 @@
+div {
+    background-color: deeppink;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+}
+/* utilice padding, evitar usar margin
+
+de utilizar un margen, obtar por el superior y el inferior.
+
+Manejar witdh: con porcentajes, no con px
+
+hight es mejor usarlo con px, nunca on %
+
+display: none
+visibility
+*/
+
+p {
+    background-color: darkturquoise;
+    margin-left: 30px;
+}
+
+.capa-1 {
+    width: 40%;
+}
+
+.capa-2 {
+    width: 50%;
+    height: 200px;
+    /* display: none */
+    background-image: url(image.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.capa-3 {
+    border-width: 10px;
+    border-style: groove;
+    border-color: blue;
+}
+
+.capa-5 {
+    display: none
+}
+
+
+/* alternativa a capa-3*/
+.capa-3v2 {
+    border: 10px solid blue;
+}

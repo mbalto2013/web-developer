@@ -1,0 +1,22 @@
+.h1-centrado {
+	text-transform: capitalize;
+	color: red;
+}
+
+.p-centrado {
+	text-align: center;
+}
+
+.h2-derecha-subrayado {
+	text-align: right;
+	text-decoration: underline;
+}
+
+.parrafo-azul {
+	color: blue;
+	word-spacing: 20px;
+}
+
+.parrafo-50 {
+	text-indent: 50px;
+}
