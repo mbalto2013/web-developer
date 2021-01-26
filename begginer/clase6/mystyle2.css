@@ -1,0 +1,47 @@
+/* utilice padding, evitar usar margin
+
+de utilizar un margen, obtar por el superior y el inferior.
+
+Manejar witdh: con porcentajes, no con px
+
+hight es mejor usarlo con px, nunca on %
+
+display: none
+visibility
+*/
+
+div {
+    
+    box-sizing: border-box;
+}
+
+.wrapper {
+    background-color: purple;
+    overflow: auto;
+}
+.capa-1 {
+    background-color: red;
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+
+.capa-2 {
+    background-color: plum;
+    width: 50%;
+    float: left;
+}
+
+.capa-3 {
+    background-color: aqua;
+}
+
+@media(max-width: 767px) {
+    .capa-1, .capa-2 {
+            width: 100%;
+    }
+    .capa2 {
+        width: 100%;
+    }
+}
+
