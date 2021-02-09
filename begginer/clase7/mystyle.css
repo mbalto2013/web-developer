@@ -1,0 +1,103 @@
+/* utilice padding, evitar usar margin
+de utilizar un margen, obtar por el superior y el inferior.
+Manejar witdh: con porcentajes, no con px
+hight es mejor usarlo con px, nunca on %
+display: none
+visibility
+*/
+
+div {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+.wrapper {
+	overflow: auto;
+}
+
+.capa-1 {
+	padding: 60px;
+	background-color: brown;
+	text-align: center;
+	font-size: 20px;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.flotante-1,
+.flotante-2 {
+	float: left;
+	width: 50%;
+}
+
+.flotante-1 {
+	background-color: dimgray;
+	padding: 0px 20px;
+	font-family: 'Chakra Petch', sans-serif;
+}
+
+.flotante-1 p {
+	background-color: black;
+	color: deepskyblue;
+}
+
+.flotante-2 {
+	background-color: pink;
+	text-align: right;
+	font-family: 'Coda Caption', sans-serif;
+}
+
+.capa-2 {
+	background-color: lightblue;
+	padding: 30px 0px 100px 0px;
+}
+
+.capa-2 p {
+	text-shadow: 2px 2px blue;
+}
+
+.capa-3 {
+	background-color: lightseagreen;
+	text-align: center;
+	padding: 80px 50px 30px 50px;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.capa-3 p {
+	letter-spacing: 10px;
+}
+
+.absoluto-1,
+.absoluto-2,
+.absoluto-3,
+.absoluto-4 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+}
+
+.absoluto-1 {
+	background-color: aqua;
+	top: 0;
+	left: 0;
+}
+
+.absoluto-2 {
+	background-color: red;
+	top: 0;
+	right: 0;
+}
+
+.absoluto-3 {
+	background-color: aliceblue;
+	bottom: 0;
+	left: 0;
+}
+
+.absoluto-4 {
+	background-color: forestgreen;
+	bottom: 0;
+	right: 0;
+}
