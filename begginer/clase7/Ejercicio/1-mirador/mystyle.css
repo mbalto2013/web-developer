@@ -1,0 +1,75 @@
+/* utilice padding, evitar usar margin
+de utilizar un margen, obtar por el superior y el inferior.
+Manejar witdh: con porcentajes, no con px
+hight es mejor usarlo con px, nunca on %
+display: none
+visibility
+*/
+
+div {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'Roboto';
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    transition: 2s;
+}
+
+a:hover {
+    color: blue;
+    transition: 2s;
+    transform: scale(2,5);
+}
+.wrapper {
+	overflow: auto;
+}
+
+.flotante {
+	float: left;
+}
+
+.menu-izq {
+	width: 30%;
+	padding-left: 30px;
+}
+
+.menu-der {
+	width: 70%;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.menu-der a {
+	padding: 20px;
+}
+
+.banner img,
+.contenido-izq img {
+	width: 100%;
+}
+
+.contenido-izq,
+.contenido-der {
+	width: 50%;
+}
+
+.contenido-izq {
+	padding: 30px;
+}
+
+.contenido-der {
+	padding: 50px 30px;
+}
+
+@media(max-width:767px) {
+	.contenido-izq,
+	.contenido-der {
+		width: 100%;
+	}
+}
