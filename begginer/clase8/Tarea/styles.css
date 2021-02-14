@@ -1,0 +1,133 @@
+body {
+	margin: 20px 250px;
+	font-family: 'Tinos', serif;
+	font-size: 18px;
+	background-color: ghostwhite;
+}
+
+div {
+	box-sizing: border-box;
+}
+
+.encabezado {
+	overflow: auto;
+    padding: 20px;
+}
+
+.menu-izq {
+	width: 30%;
+}
+
+.menu-der {
+	width: 70%;
+	text-align: center
+}
+
+.contacto {
+	padding-top: 12px;
+	width: 40%;
+	float: right;
+}
+
+.telefono {
+	width: 60%;
+	float: left;
+	line-height: 5px;
+	color: royalblue;
+}
+
+.redes-sociales {
+	width: 40%;
+	float: right;
+	padding-left: 10px;
+}
+
+.num-tel {
+	font-weight: bolder;
+}
+
+.flotante {
+	float: left;
+	padding-right: 20px
+}
+
+.menu {
+	text-align: right;
+	padding-right: 10px;
+	padding-top: 70px;
+}
+
+.menu a {
+	display: inline-block;
+	text-decoration: none;
+	padding-right: 15px;
+	text-decoration: none;
+	color: dimgrey;
+}
+
+.banner {
+	background-image: url("img/banner.jpg");
+	background-size: cover;
+	background-position: top;
+	width: 100%;
+	height: 691px;
+	color: white;
+}
+
+.herramientas {
+	background-image: url("img/herramientas.jpg");
+	background-size: cover;
+	background-position: top;
+	width: 100%;
+	height: 603px;
+	color: white;
+}
+
+.banner h1 {
+	position: absolute;
+	background-color: #D1992A;
+	margin: 360px 0px 0px 525px;
+	padding: 10px 80px 0px 10px;
+	height: 50px;
+}
+
+.banner h2 {
+	position: absolute;
+	background-color: #16458E;
+	margin: 420px 0px 0px 525px;
+	padding: 10px 80px 0px 10px;
+	height: 40px;
+}
+
+.descripcion img {
+	padding: 30px 0px 0px 700px;
+}
+
+.contenido-feria {
+	width: 65%;
+	float: right;
+	text-align: right;
+	padding-right: 160px;
+    font-size: 17px;
+}
+
+.ingreso-feria {
+	border: none;
+	color: 16458E;
+    margin-top: 20px;
+	padding: 15px 32px;
+	font-size: 18px;
+	font-family: 'Tinos', serif;
+}
+
+.pie-pagina {
+    overflow: auto;
+    padding: 20px;
+}
+
+@media(max-width:767px) {
+	.contenido-izq,
+	.contenido-der {
+		width: 100%;
+	}
+}
