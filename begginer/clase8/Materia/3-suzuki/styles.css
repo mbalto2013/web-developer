@@ -1,0 +1,39 @@
+body {
+	font-family: 'Tinos', serif;
+	font-size: 18px;
+	background-color: ghostwhite;
+	margin: 0;
+}
+
+div {
+	box-sizing: border-box;
+}
+
+.wrapper {
+	overflow: auto;
+	background-color: cornsilk;
+}
+
+.fondo img,
+.carros img {
+	width: 100%
+}
+
+.carros {
+	margin-top: -150px;
+}
+
+.logo {
+	position: absolute;
+	top: 0;
+	right: 40px;
+	width: 80px;
+}
+
+.info-izq,
+.info-der {
+	float: left;
+	width: 50%;
+	text-align: center;
+	padding: 30px;
+}
