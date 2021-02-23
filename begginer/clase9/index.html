@@ -1,0 +1,43 @@
+<html>
+    <head>
+      <link rel="stylesheet" type="text/css" href="styles.css"/>
+    </head>
+    <body>
+        <h1 id=tituloUno>Titulo 1</h1>
+        <a id="link" href="http://google.com" class="link-externo texto-rojo" target="_blank">Hola!</a>
+        <p></p>
+        
+        <h1 id=tituloDos>Titulo 2</h1>
+        <p></p>
+        
+        <h1 id=tituloTres>Titulo 3</h1>
+        <p></p>
+    
+        <script>
+            var tituloUno = document.getElementById("tituloUno");
+            var link= document.getElementById("link");
+            
+            var clasesLink = link.classList;
+            // Quitar una clase
+            clasesLink.remove("texto-rojo");
+            // Agregar una clase
+            clasesLink.add("texto-mayuscula");
+            
+            console.log(link.className);
+            console.log(link.classList);
+
+            // Arreglos
+            var arreglo = ["lunes", "martes", "miercoles", "jueves", "viernes"];
+            console.log(arreglo.length);
+            
+            
+            var parrafos = document.getElementsByTagName("p");
+            console.log(parrafos);
+            parrafos[0].innerHTML = "Contenido nuevo p1";
+            parrafos[1].innerHTML = "Contenido nuevo p2";
+            parrafos[2].innerHTML = "Contenido nuevo p3";
+            console.log(parrafos[0]);
+        
+        </script>
+    </body>
+</html>

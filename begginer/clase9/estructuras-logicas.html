@@ -1,0 +1,65 @@
+<html>
+    <head></head>
+    
+    <body>
+        <script>
+            var a = 10;
+            var b = 20;
+            
+            if (a > b) {
+                console.log("A es mayor!");
+            } 
+            
+            if (b > a){
+                console.log("B es mayor!");
+            }else {
+                console.log("A y B son iguales");
+            }
+            
+            
+            var precioBruto = 100 ;
+            var impuesto = 13/100 ;
+            var precioNeto = precioBruto + (precioBruto * impuesto);
+            console.log("Precio total: " + precioNeto )
+            
+            
+            var descuentoNoche = 5/100;
+            var costoNoche = 100;
+            var estadia = 5;
+            
+            var total = estadia * ( costoNoche  - (descuentoNoche * costoNoche));
+            console.log(total);
+            
+            
+            var empleado1 = "Allan"; 
+            var numHoras = 5;
+            var precioHora = 3000;
+            var total = numHoras*precioHora;
+            console.log("Total: " + total);
+
+            var empleado2 = "Bryan"; 
+            var numHoras = 5;
+            var precioHora = 3000;
+            var impuesto = 15/100;
+            var total = numHoras * ( precioHora  - (precioHora * impuesto));
+            
+            console.log("Total: " + total);
+            
+            
+            var velocidad = 100; // kms/hora
+            
+            var t1Horas = 3;
+            var t1Minutos = 28;
+            var t1Total = t1Horas * 60 + t1Minutos;
+
+            var t2Horas = 15;
+            var t2Minutos = 55;
+            var t2Total = t2Horas * 60 + t2Minutos;
+            
+            var duracion = t2Total - t1Total ;
+            
+            console.log(duracion/60/velocidad);
+            
+        </script>
+    </body>
+</html>
