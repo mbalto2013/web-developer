@@ -1,0 +1,34 @@
+
+div {
+	box-sizing: border-box;
+}
+
+.wrapper {
+	overflow: auto;
+}
+
+.navegacion {
+    padding: 20px 40px;
+}
+
+.logo, .menu {
+    float: left;
+}
+
+.logo {
+    width: 30%;
+}
+
+.logo img{
+    width: 140px;
+}
+
+.menu {
+    width: 70%;
+    text-align: right;
+    padding-top: 30px ;
+}
+
+.menu a {
+    padding: 0px 15px;
+}
