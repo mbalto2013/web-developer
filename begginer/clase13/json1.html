@@ -1,0 +1,31 @@
+<html>
+  <body>
+    <script>
+      var json = {
+        "nombre":"Bruce Wayne",
+        "edad":32,
+        "identidad":"Batman",
+        "empresas":["Wayne Enterprises", "Wayne Foundation", "Wayne Tower"]
+      };
+
+      console.log(json.nombre);
+      console.log(json.edad);
+      console.log(json.empresas[0]);
+
+      if (json.edad > 18) {
+        // Si es cierto
+        console.log("Es mayor de edad");
+      } else {
+        // Si es falso
+        console.log("Es menor de edad");
+      }
+
+      var contador = 0;
+      while(contador < json.empresas.length) {
+        console.log(json.empresas[contador]);
+        contador++; // Sumarle 1 a la variable
+      }
+
+    </script>
+  </body>
+</html>

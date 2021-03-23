@@ -1,0 +1,23 @@
+/**************************************/
+/************** CUSTOM ****************/
+/**************************************/
+
+@media (min-width: 768px) {
+  .menu-principal .nav-item.ancho-definido {
+    width: 110px;
+  }
+
+  .redes {
+    width: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-brand img {
+    width: 120px;
+  }
+}
+
+.cursiva {
+  font-family: 'Dancing Script', cursive;
+}
