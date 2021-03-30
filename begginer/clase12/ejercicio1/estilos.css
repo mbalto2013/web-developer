@@ -1,0 +1,64 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.cursiva {
+	font-family: 'Yellowtail', cursive;
+}
+
+.carousel-caption {
+	bottom: 40px;
+}
+
+.carousel-caption h1 {
+	font-size: 160px;
+	line-height: 50px;
+}
+
+.text-naranja {
+	color: #f06538;
+}
+
+.bg-naranja {
+    background-color: #f06538;
+}
+
+.carousel-caption p {
+	font-size: 60px;
+}
+
+.carousel-caption h1,
+.carousel-caption p {
+	text-shadow: 0 0 10px #000;
+}
+
+.fondo-detalles {
+	background-image: url(img/detallesbg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.borde-blanco {
+	border-color: white;
+	border-width: 2px;
+}
+
+.bg-blog-1 {
+	background-image: url(img/blog1.jpg)
+}
+
+.bg-blog-2 {
+	background-image: url(img/blog2.jpg)
+}
+
+.bg-blog-1,
+.bg-blog-2 {
+	background-position: bottom;
+	background-size: cover;
+	padding: 150px 10px 20px 20px;
+	: synt
+}
+
+.font-50px {
+	font-size: 50px;
+}
