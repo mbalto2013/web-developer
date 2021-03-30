@@ -1,0 +1,10 @@
+.link-externo {
+    text-decoration:  line-through;
+}
+
+.texto-rojo {
+    color: red;
+}
+
+.texto-mayuscula {
+    text-transform: uppercase;

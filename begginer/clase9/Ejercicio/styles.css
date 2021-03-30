@@ -1,0 +1,53 @@
+body {
+	margin: 0;
+}
+
+div {
+	box-sizing: border-box;
+}
+
+.baner-superior {
+    background-image: url("img/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.wrapper {
+	overflow: auto;
+}
+
+.menu-izq, .menu-der {
+    float: left;
+	width: 50%;
+    padding: 20px;
+}
+
+.menu-izq a, .menu-der a  {
+    padding: 0px 10px;
+}
+
+.menu-der {
+    text-align: right;
+}
+
+.logo {
+    text-align: center;    
+}
+
+.logo-chaocole {
+    text-align: center;
+    padding: 40px;  
+}
+
+.video {
+    text-align: center;
+}
+
+.barras-blancas {
+    position: absolute;
+}
+
+
+.baner-inferior {
+    background-position: center;
+}

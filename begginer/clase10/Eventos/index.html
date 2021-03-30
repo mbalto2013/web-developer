@@ -1,0 +1,35 @@
+<html>
+    <head>
+      <style>
+          .texto-rojo {
+              color: red;
+          }
+      </style>
+        
+    </head>
+    <body>
+        <h1 onmouseover="agregarClase()" onmouseout="quitarClase()" id="titulo">Titulo </h1>
+        <button onclick="sumar()" >Sumar!</button>
+        
+        <script>
+            function agregarClase(){
+                var titulo = document.getElementById("titulo");
+                titulo.classList.add("texto-rojo");
+            }
+            
+            function quitarClase(){
+                var titulo = document.getElementById("titulo");
+                titulo.classList.remove("texto-rojo");
+            }
+            
+            function sumar(){
+                var a = 5;
+                var b = 10;
+                var total = a+b;
+                console.log(total);
+            }
+            
+
+        </script>
+    </body>
+</html>

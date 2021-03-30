@@ -1,0 +1,65 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.text-naranja {
+  color: #f06538;
+}
+
+.bg-naranja {
+  background-color: #f06538;
+}
+
+.cursiva {
+  font-family: 'Yellowtail', cursive;
+}
+
+.carousel-caption {
+  bottom: 40%;
+}
+
+.carousel-caption h1 {
+  font-size: 160px;
+  line-height: 50px;
+}
+
+.font-50px {
+  font-size: 50px;
+}
+
+.carousel-caption p {
+  font-size: 60px;
+}
+
+.carousel-caption h1, .carousel-caption p {
+  text-shadow: 0px 0px 10px #000;
+}
+
+.fondo-detalles {
+  background-image: url(img/detallesbg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.borde-blanco {
+    border-color: white;
+    border-width: 2px;
+}
+
+.bg-blog-1 {
+  background-image: url(img/blog1.jpg);
+}
+
+.bg-blog-2 {
+  background-image: url(img/blog2.jpg);
+}
+
+.bg-blog-1, .bg-blog-2 {
+  background-position: bottom;
+  background-size: cover;
+  padding: 150px 20px 20px 20px;
+}
+
+.navbar-brand img {
+  width: 150px;
+}
