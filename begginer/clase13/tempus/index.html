@@ -15,7 +15,7 @@
       <script src="https://kit.fontawesome.com/d78d8e4499.js" crossorigin="anonymous"></script>
       <link href="style.css" rel="stylesheet">
       <link rel="preconnect" href="https://fonts.gstatic.com">
-      <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Spartan:wght@200;300&display=swap" rel="stylesheet">
    </head>
    <body>
       <nav class="navbar navbar-expand-md navbar-light menu-principal">
@@ -56,7 +56,7 @@
                      <p>1-888-800-887766</p>
                   </a>
                </li>
-               <li class="nav-item text-center px-3">
+               <li class="nav-item text-center px-0">
                   <a class="nav-link" href="#"><img src="img/facebook.png" class="redes" /></a>
                </li>
             </ul>
@@ -90,8 +90,40 @@
                <h3>Ver todos</h3>
             </div>
          </div>
-          <!-- Bloque dinamico -->
-         <div id="tours" class="row row pb-5">
+         <!-- Bloque dinamico -->
+         <div id="tours" class="row pb-3">
+         </div>
+         <div class="row justify-content-around">
+            <div class="col-md-6">
+               <img src="img/mapa.png" class="w-100"/>
+            </div>
+            <div class="col-md-6 px-3">
+               <h1 class="cursiva" >!Lo extraordinario está más cerca  de lo que crees!</h1>
+               <p class="text-sm-left text-descripcion w-100"><small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small></p>
+               <p class="text-sm-left text-descripcion"><small> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</small></p>
+               <div class="row text-center">
+                  <div class="col-md-4 px-2">
+                     <h1>15</h1>
+                     <p><small>años de experiencia</small></p>
+                  </div>
+                  <div class="col-md-4 px-2">
+                     <h1>+2450</h1>
+                     <p><small>de viajeros!</small></p>
+                  </div>
+                  <div class="col-md-4 px-2">
+                     <h1>+350</h1>
+                     <p class="text-descripcion"><small>de destinos a su disposición</small></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row pt-4">
+            <div class="col-6 embed-responsive embed-responsive-4by3">
+               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+            </div>
+            <div class="col-6 embed-responsive embed-responsive-4by3">
+               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+            </div>
          </div>
       </main>
       <!-- JS -->
@@ -118,7 +150,7 @@
              else
                  var fondo = "bg-rojo";
              
-             var html = "<div class='col-12 col-md-3'> <img src='img/" + tours[contador].imagen+"' class='w-100'/><p class='" + fondo +" text-white px-3 py-2'>" + tours[contador].nombre + "<small> ("+ tours[contador].precio+")</small></p></div>";
+             var html = "<div class='col-12 col-md-3' data-aos='fade-left'> <img src='img/" + tours[contador].imagen+"' class='w-100'/><p class='" + fondo +" text-white px-3 py-2'>" + tours[contador].nombre + "<small> ("+ tours[contador].precio+")</small></p></div>";
              document.getElementById("tours").insertAdjacentHTML("beforeend",html);
              contador++;
              
