@@ -3,31 +3,32 @@
 /**************************************/
 
 @media (min-width: 768px) {
-  .menu-principal .nav-item.ancho-definido {
-    width: 110px;
-  }
-
-  .redes {
-    width: 60px;
-  }
+	.menu-principal .nav-item.ancho-definido {
+		width: 110px;
+	}
+	.redes {
+		width: 60px;
+	}
 }
 
 @media (max-width: 767px) {
-  .navbar-brand img {
-    width: 120px;
-  }
+	.navbar-brand img {
+		width: 120px;
+	}
 }
 
 .cursiva {
-  font-family: 'Dancing Script', cursive;
+	font-family: 'Dancing Script', cursive;
 }
 
+.text-descripcion {
+	font-family: 'Spartan', sans-serif;
+}
 
 .bg-negro {
-    background-color: black;
+	background-color: black;
 }
 
-
 .bg-rojo {
-    background-color: red;
+	background-color: red;
 }
