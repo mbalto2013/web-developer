@@ -118,12 +118,48 @@
             </div>
          </div>
          <div class="row pt-4">
-            <div class="col-6 embed-responsive embed-responsive-4by3">
+            <div class="col-12 col-md-6 embed-responsive embed-responsive-4by3">
                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
             </div>
-            <div class="col-6 embed-responsive embed-responsive-4by3">
+            <div class="col-12 col-md-6 embed-responsive embed-responsive-4by3">
                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
             </div>
+         </div>
+         <div class="row justify-content-around pie-pagina p-5">
+            <div class="col-12 col-md-6">
+               <form class="form-pie-pagina">
+                  <div class="form-group">
+                     <input id="nombre" type="text" class="form-control bg-transparent rounded-0" placeholder="Nombre"/>
+                  </div>
+                  <div class="form-group">
+                     <input type="email" class="form-control bg-transparent rounded-0" placeholder="Correo"/>
+                  </div>
+                  <div class="form-group">
+                     <input type="text" class="form-control bg-transparent rounded-0" placeholder="Empresa"/>
+                  </div>
+                  <div class="form-group">
+                     <input type="text"  pattern="[0-9]{8}"class="form-control bg-transparent rounded-0" placeholder="Teléfono"/>
+                  </div>
+                  <div class="form-group">
+                     <textarea class="form-control bg-transparent rounded-0" placeholder="Mensaje" required></textarea>
+                  </div>
+                  <div class="form-group">
+                     <button type="submit" class="btn btn-enviar rounded-0 border px-4" onclick="validarForm()">Enviar</button>
+                  </div>
+               </form>
+            </div>
+            <div class="col-6 col-md-6 px-0">
+                <div class="row text-sm-right">
+                    <div class="col-12">
+                        <h1 class="cursiva text-xl-left">Get in touch with us make your reservervation today!</h1>
+                    </div>     
+                    <div class="col-12 " class="border-top">
+                        <div id="info" class="py-5">
+                        </div>
+                    </div>                  
+                </div>
+            </div>
+
          </div>
       </main>
       <!-- JS -->
@@ -155,6 +191,23 @@
              contador++;
              
          }
+          
+          function validarForm(){
+              var nombre = document.getElementById('nombre');
+              if(nombre.value==""){
+                  nombre.classList.add('borde-rojo');
+              }else{
+                  nombre.classList.remove('borde-rojo');
+              }
+          }
+          
+          info_contacto = {"email": "info@tempusta.com", "telefono": "1-888-800-8358", "facebook": "facebook.com/tempusta"};
+          
+                    for (const key in info_contacto){
+            var html_info = "<p class='text-right text-blanco'>" + info_contacto[key] +"</p>";
+            document.getElementById("info").insertAdjacentHTML("beforeend",html_info);
+          }
+          
       </script>
    </body>
 </html>
