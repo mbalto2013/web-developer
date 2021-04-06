@@ -32,3 +32,24 @@
 .bg-rojo {
 	background-color: red;
 }
+
+.pie-pagina {
+    background-image: url('img/footer.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.form-pie-pagina{
+    border-color: #000;    
+}
+
+.form-pie-pagina input::placeholder, .form-pie-pagina textarea::placeholder {
+    color: #000;
+}
+
+.borde-rojo{
+    border-color: red;
+}
+.text-blanco {
+    color: black;
+}
