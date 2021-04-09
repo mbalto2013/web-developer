@@ -119,13 +119,14 @@
          </div>
          <div class="row pt-4">
             <div class="col-12 col-md-6 embed-responsive embed-responsive-4by3">
-               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/zpOULjyy-n8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
             </div>
             <div class="col-12 col-md-6 embed-responsive embed-responsive-4by3">
-               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/zpOULjyy-n8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
             </div>
          </div>
-         <div class="row justify-content-around pie-pagina p-5">
+         <!-- Footer -->
+         <div class="row  pie-pagina p-5">
             <div class="col-12 col-md-6">
                <form class="form-pie-pagina">
                   <div class="form-group">
@@ -144,23 +145,45 @@
                      <textarea class="form-control bg-transparent rounded-0" placeholder="Mensaje" required></textarea>
                   </div>
                   <div class="form-group">
-                     <button type="submit" class="btn btn-enviar rounded-0 border px-4" onclick="validarForm()">Enviar</button>
+                     <button type="submit" class="btn btn-enviar rounded-0 btn-outline-light px-4" onclick="validarForm()">Enviar</button>
                   </div>
                </form>
             </div>
-            <div class="col-6 col-md-6 px-0">
-                <div class="row text-sm-right">
-                    <div class="col-12">
-                        <h1 class="cursiva text-xl-left">Get in touch with us make your reservervation today!</h1>
-                    </div>     
-                    <div class="col-12 " class="border-top">
-                        <div id="info" class="py-5">
-                        </div>
-                    </div>                  
-                </div>
+            <div class="col-12 col-md-6 pt-1">
+               <h1 class="cursiva text-right border-dark border-bottom">Get in touch with us and <br> make your reservervation today!</h1>
+               <div id="info" class="py-3">
+               </div>
             </div>
-
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-12 p-5 m-4">
+                     <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                           <a class="nav-link text-white border-right px-2" href="#">Explorar</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link text-white border-right px-2" href="#">Destinos</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link text-white border-right px-2" href="#">Ofertas</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link text-white border-right px-2" href="#">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link text-white px-2" href="#">Contactos</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
          </div>
+         <footer class="footer">
+            <div class="container-fluid">
+               <span class="texto-negro">Place sticky footer content here.</span>
+            </div>
+         </footer>
+         <!-- Footer -->         
       </main>
       <!-- JS -->
       <script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=' crossorigin='anonymous'></script>
@@ -186,7 +209,7 @@
              else
                  var fondo = "bg-rojo";
              
-             var html = "<div class='col-12 col-md-3' data-aos='fade-left'> <img src='img/" + tours[contador].imagen+"' class='w-100'/><p class='" + fondo +" text-white px-3 py-2'>" + tours[contador].nombre + "<small> ("+ tours[contador].precio+")</small></p></div>";
+             var html = "<div class='col-12 col-md-3' data-aos='fade-left'> <img src='img/" + tours[contador].imagen+"' class='w-100'/><p class='" + fondo +" text-white'>" + tours[contador].nombre + "<small> ("+ tours[contador].precio+")</small></p></div>";
              document.getElementById("tours").insertAdjacentHTML("beforeend",html);
              contador++;
              
@@ -204,10 +227,13 @@
           info_contacto = {"email": "info@tempusta.com", "telefono": "1-888-800-8358", "facebook": "facebook.com/tempusta"};
           
                     for (const key in info_contacto){
-            var html_info = "<p class='text-right text-blanco'>" + info_contacto[key] +"</p>";
+            var html_info = "<p class='text-right texto-negro m-0'>" + info_contacto[key] +"</p>";
             document.getElementById("info").insertAdjacentHTML("beforeend",html_info);
           }
           
+          var scree_withd= screen.width;
+          
+         
       </script>
    </body>
 </html>
