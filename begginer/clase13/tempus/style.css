@@ -17,6 +17,10 @@
 	}
 }
 
+body {
+        margin: 0;
+}
+
 .cursiva {
 	font-family: 'Dancing Script', cursive;
 }
@@ -30,13 +34,13 @@
 }
 
 .bg-rojo {
-	background-color: red;
+	background-color: red !important;
 }
 
 .pie-pagina {
     background-image: url('img/footer.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat:round;
+    background-size:cover;
 }
 
 .form-pie-pagina{
@@ -50,6 +54,20 @@
 .borde-rojo{
     border-color: red;
 }
-.text-blanco {
+.texto-blanco {
+    color: white;
+}
+
+.texto-negro {
     color: black;
+}
+
+
+.borde-inferior {
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+}
+
+div {
+	box-sizing: border-box;
 }
