@@ -1,0 +1,60 @@
+<html>
+  <head></head>
+  <body onload="cargarTabla()">
+    <h1>Estudiantes</h1>
+    <table id="tablaEstudiantes">
+      <tr><th>Nombre</th><th>Carrera</th><th>Edad</th></tr>
+    </table>
+    <form>
+      <input type="text" id="nombre" placeholder="Nombre" />
+      <input type="text" id="carrera" placeholder="Carrera" />
+      <input type="text" id="edad" placeholder="Edad" />
+      <button onclick="insertarEstudiante()">Insertar</button>
+    </form>
+    <script>
+      function insertarEstudiante() {
+        var datos = {
+          nombre: document.getElementById('nombre').value,
+          carrera: document.getElementById('carrera').value,
+          edad: document.getElementById('edad').value
+        }
+
+        fetch("http://localhost:8080/estudiantes/insertar", {
+          method: "POST",
+          body: JSON.stringify(datos),
+          headers: {"Content-Type": "application/json"}
+        })
+          .then(
+            function(response) {
+              return response.json();
+            }
+          )
+          .then(
+            function(json) {
+              var linea = "<tr><td>"+json.nombre+"</td><td>"+json.carrera+"</td><td>"+json.edad+"</td></tr>";
+              document.getElementById('tablaEstudiantes').insertAdjacentHTML("beforeEnd", linea);
+
+            }
+          );
+      }
+
+      function cargarTabla() {
+        fetch("http://localhost:8080/estudiantes")
+          .then(
+            function(response) {
+              return response.json();
+            }
+          )
+          .then(
+            function(json) {
+              console.log(json);
+              for(var i = 0; i < json.length; i++) {
+                var linea = "<tr><td>"+json[i].nombre+"</td><td>"+json[i].carrera+"</td><td>"+json[i].edad+"</td></tr>";
+                document.getElementById('tablaEstudiantes').insertAdjacentHTML("beforeEnd", linea);
+              }
+            }
+          );
+      }
+    </script>
+  </body>
+</html>
